@@ -1,16 +1,14 @@
-puts "How much was your meal?"
-meal = Float(gets.chomp)
+#Part 1 of exercise 2
+meal_cost = 55
+tip = meal_cost * 0.15
+puts "Your tip would be #{tip}"
 
-puts "What is the tax rate? (e.g. 15)"
-tax = Float(gets.chomp)
+#Part 2 of exercise 2
+string = "Hello"
+integer = 5
+string = string + integer.to_s
+puts string
 
-puts "What percentage would you like to tip (e.g. 15)"
-tip = Float(gets.chomp)
-tip*=0.01
-
-meal_after_tax = meal + (meal * (tax * 0.01))
-tip*=meal_after_tax
-
-puts "Your meal cost $#{meal}"
-puts "Your tax on the meal was #{tax}%. Your meal after tax was $#{meal_after_tax}."
-puts "You should tip $#{tip}. You need to give out $#{(tip+meal_after_tax)} in total."
+#Part 3 of exercise 2
+total = 45628 * 7839
+puts "45628 multiplied by 7839 would be #{total}"
